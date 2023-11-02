@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Info({ names }) {
   return (
-    <div className="leading-10 text-center">
+    <div className="leading-10 phone:px-2">
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea fugit quis
       quas dolore ut obcaecati est praesentium ipsa assumenda expedita sapiente
       culpa id fuga amet blanditiis, non excepturi voluptates magnam, voluptatem
@@ -13,10 +13,10 @@ export default function Info({ names }) {
       corporis inventore, id quos vero quia omnis sint at doloribus. Laboriosam
       ullam incidunt non natus vel accusantium aut dolore! Laudantium
       voluptatibus expedita repellat beatae inventore. Officia, tempora.
-      <div className="text-4xl text-orange-600 font-bold">List</div>
-      <div className="text-2xl text-orange-500 font-semibold">It's Me</div>
-      <div className="text-xl text-orange-400 border-2 border-black-50 ml-96 mr-96 text-left">
-        <ol className="list-decimal list-inside border-2 mr-96 ml-96">
+      <div className="text-4xl text-orange-600 font-bold text-center">List</div>
+      <div className="text-2xl text-orange-500 font-semibold text-center">It's Me</div>
+      <div className="text-xl text-orange-400 border-2 border-black-50">
+        <ol className="list-decimal list-inside border-2 phone:ml-1 ml-96">
           {names && names.length > 0 && names.map((name) => <li>{name}</li>)}
         </ol>
       </div>
